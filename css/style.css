@@ -43,7 +43,7 @@
 
     
     .full-name {
-        font-size: 40px;
+        font-size: 30px;
         text-transform: uppercase;
         /* margin-bottom: 5px; */
         background-color: lightblue;
@@ -337,12 +337,12 @@ li.dropdown {
 }
 
 a:link {
-  color: rgb(12, 12, 12);
+  color: rgb(180, 66, 37);
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: rgb(15, 15, 139);
+  color: rgb(76, 16, 172);
   background-color: transparent;
   text-decoration: none;
 }
