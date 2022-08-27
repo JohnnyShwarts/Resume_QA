@@ -55,7 +55,7 @@
   
 </head>
 <body>
-
+<script src="JS/scripto.js"></script>
 <!-- <label for="dropdown">Выберите язык программирования:</label>
 <select id="dropdown" class="custom-select">
  <option selected>--</option>
@@ -73,7 +73,7 @@
 <div class="container">
   <div class="header">
     <div class="full-name">
-      <span class="first-name">QA</span> 
+      <center><span class="first-name">QA</span> 
       <span class="last-name">ENGINEER</span>
     </div>
       <!-- кнопка -->
@@ -103,8 +103,10 @@
     
   
     <div class="contact-info">
-      <span class="email">Email: </span>
-      <span class="email-val"><a href="mailto:JohnnyShwarts@gmail.com">JohnnyShwarts@gmail.com</a></span>
+      <center><span class="email">Email: </span>
+      <span class="email-val"><a href="mailto:JohnnyShwarts@gmail.com"><div class="tooltip"><span class="tooltiptext">If you want to ask me, send me an email</span>JohnnyShwarts@gmail.com</a></span>
+    </div></center>
+      
 <!--       <span class="separator"></span>
       <span class="phone">Telegram: </span>
       
@@ -112,15 +114,7 @@
       <span class="separator"></span> -->
    <!-- <ul> -->
       <!-- <li><a href="#home">Главная</a></li> -->
-      <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn"><img src="https://schtirlitz.ru/800/600/https/cdn.onlinewebfonts.com/svg/img_524742.png" width="20" 
-        height="20" alt="linkedin"></a>
-      <div class="dropdown-content">
-        <a href="#Education">Education</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Skills">Skills</a>
-      </div>
-    </li>
+     
   <!-- </ul> -->
 
     <!-- </div> -->
@@ -128,6 +122,25 @@
    
     
 </div>
+      
+      <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+      
 
     <div class="about">
       <span class="position">Hi, my name is Evgeniy Statsenko,</span>
