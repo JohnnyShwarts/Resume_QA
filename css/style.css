@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-/*     box-sizing: border-box; */
+    box-sizing: border-box;
   }
   html {
     height: 100%;
@@ -410,6 +410,8 @@ a:active {
   top: 0;
   left: 0;
   position: absolute;
+  margin-top: 33px;
+  margin-left: 22px;
 }
 
 .menu-bg {
@@ -417,7 +419,7 @@ a:active {
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #DC052D, #DC052D);
+  background: radial-gradient(circle, #dc052d, #dc052db0);
   border-radius: 50%;
   transition: 0.3s ease;
 }
