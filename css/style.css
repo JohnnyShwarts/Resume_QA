@@ -410,8 +410,8 @@ a:active {
   top: 0;
   left: 0;
   position: absolute;
-  margin-top: 33px;
-  margin-left: 22px;
+  margin-top: -12px;
+  margin-left: 20px;
 }
 
 .menu-bg {
