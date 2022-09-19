@@ -240,7 +240,7 @@
     } */
 
     .righ {
-      float: auto
+      float: right;
       
       
     /* margin-left: auto;
@@ -254,7 +254,7 @@
 
   .navlist {
     position: relative;
-    text-align: left;
+/*     text-align: left; */
     
 }
 
