@@ -54,7 +54,7 @@
           </p>
 
           <!-- Форма обратной связи -->
-          <form action="new_2.html" method="post">
+          <form action="new_3.php" method="post">
 
            <!-- Каждый input для выравнивания вкладываем в блок input-box -->
             <div class="input-box">
@@ -283,20 +283,6 @@ body {
   }
 }
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["имя"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $message = $_POST["сообщение"];
-
-    $to = "jk122@yandex.ru";
-    $subject = "Сообщение с вашего сайта";
-    $headers = "From: $email";
-
-    mail($to, $subject, $message, $headers);
-}
-?>
 
 </style>
     
