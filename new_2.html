@@ -7,7 +7,7 @@
   </head>
   <body>
 
-<form action="обработчик.php" method="post">
+
 
     <!-- Контейнер выравнивает по ширине и по центру -->
     <div class="container">
@@ -54,7 +54,7 @@
           </p>
 
           <!-- Форма обратной связи -->
-          <form action="обработчик.php" method="post">
+          <form action="new_3.html" method="post">
 
            <!-- Каждый input для выравнивания вкладываем в блок input-box -->
             <div class="input-box">
@@ -64,10 +64,10 @@
               <input type="email" name="email" placeholder="Введите email" />
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Введите телефон" />
+              <input type="text" name="phone" placeholder="Введите телефон" />
             </div>
             <div class="input-box message-box">
-              <textarea placeholder="Сообщение"></textarea>
+              <textarea placeholder="Сообщение" placeholder="Введите сообщение"></textarea>
             </div>
             <div class="button">
               <input type="submit" value="Отправить" />
@@ -287,6 +287,7 @@ body {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["имя"];
     $email = $_POST["email"];
+    $phone = $_POST["phone"];
     $message = $_POST["сообщение"];
 
     $to = "jk122@yandex.ru";
