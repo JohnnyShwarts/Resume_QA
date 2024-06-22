@@ -1,6 +1,6 @@
 ﻿ <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marketing Button</title>
+<title>Discount Button</title>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 <style>
 html, body {
@@ -284,7 +284,7 @@ button:hover {
 <body>
 
 <a href="#" class="boton" id="mainButton">
-    Check Price >    
+        Check Price & You'll be Happy >    
 </a>
 
 <!-- Modal -->
@@ -293,7 +293,7 @@ button:hover {
     <span class="close" id="closeButton">&times;</span>
     <div class="calculator">
       <div id="window2" class="window">
-        <h3>Сalculator Online</h3>
+        <h3>Simple Moving - Сalculator Online</h3>
         <div class="input-group">
           <label for="distanceType">Distance Type:</label>
           <select id="distanceType" name="distanceType" class="form-control">
@@ -449,7 +449,7 @@ function sendToWhatsApp() {
   var movingTo = document.getElementById('movingTo').value;
   var calculationResult = document.getElementById('costOfTransportation').textContent;
   var message = "Name: " + name + "%0A" + "Comment: " + comment + "%0A" + "Moving From: " + movingFrom + "%0A" + "Moving To: " + movingTo + "%0A" + "Calculation Result: " + calculationResult;
-  var whatsappURL = "https://api.whatsapp.com/send?phone=972529680989&text=" + message;
+  var whatsappURL = "https://api.whatsapp.com/send?phone=7189161638&text=" + message;
   window.open(whatsappURL, '_blank');
 }
 </script>
