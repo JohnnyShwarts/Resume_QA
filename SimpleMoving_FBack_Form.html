@@ -443,12 +443,13 @@ function calculateCostWindow2() {
 }
 
 function sendToWhatsApp() {
+  var name = document.getElementById('cargoType').value;
   var name = document.getElementById('name').value;
   var comment = document.getElementById('comment').value;
   var movingFrom = document.getElementById('movingFrom').value;
   var movingTo = document.getElementById('movingTo').value;
   var calculationResult = document.getElementById('costOfTransportation').textContent;
-  var message = "cargoType: " + cargoType + "%0A" + "distanceType: " + distanceType + "%0A" + "name: " + name + "%0A" + "movingDate: " + movingDate + "%0A" + "pickupTime: " + pickupTime + "%0A" + "Name: " + name + "%0A" + "Comment: " + comment + "%0A" + "Moving From: " + movingFrom + "%0A" + "Moving To: " + movingTo + "%0A" + "Calculation Result: " + calculationResult;
+  var message = "cargoType: " + cargoType + "%0A" + "distanceType: " + distanceType + "%0A" + "movingDate: " + movingDate + "%0A" + "pickupTime: " + pickupTime + "%0A" + "Name: " + name + "%0A" + "Comment: " + comment + "%0A" + "Moving From: " + movingFrom + "%0A" + "Moving To: " + movingTo + "%0A" + "Calculation Result: " + calculationResult;
   var whatsappURL = "https://api.whatsapp.com/send?phone=17189161638&text=" + message;
   window.open(whatsappURL, '_blank');
 }
